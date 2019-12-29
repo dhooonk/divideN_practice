@@ -40,13 +40,16 @@ DJANGO_APPS = [
 
 ]
 PROJECT_APPS = [
+    "cores.apps.CoresConfig",
     "users.apps.UsersConfig",
+    "travels.apps.TravelsConfig"
+
 ]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS
 
 
-THIRD_PARTY_APP = []
+THIRD_PARTY_APP = ["django-countries"]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
