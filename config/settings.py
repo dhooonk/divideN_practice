@@ -39,12 +39,14 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 
 ]
-
 PROJECT_APPS = [
-    "users.apps.Usersconfig",
+    "users.apps.UsersConfig",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS
+
+
+THIRD_PARTY_APP = []
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
