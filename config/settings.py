@@ -42,7 +42,8 @@ DJANGO_APPS = [
 PROJECT_APPS = [
     "cores.apps.CoresConfig",
     "users.apps.UsersConfig",
-    "travels.apps.TravelsConfig"
+    "travels.apps.TravelsConfig",
+    "moneybooks.apps.MoneybooksConfig",
 
 ]
 
