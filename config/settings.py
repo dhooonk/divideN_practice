@@ -44,6 +44,7 @@ PROJECT_APPS = [
     "users.apps.UsersConfig",
     "travels.apps.TravelsConfig",
     "moneybooks.apps.MoneybooksConfig",
+    "conversations.apps.ConversationsConfig"
 
 ]
 

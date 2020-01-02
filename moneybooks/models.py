@@ -17,9 +17,12 @@ class Moneybook(core_models.TimeStampedModel):
     CATEGORY_TICKET = "ti"
     CATEGORY_CHOICES = ((CATEGORY_EAT, "EAT"), (CATEGORY_TICKET, "TICKET"))
 
-    companion = models.ForeignKey(
-        "users.User", on_delete=models.CASCADE, null=True)
+    paidperson = models.ForeignKey(
+        "users.User", on_delete=models.CASCADE, null=True, related_name="paidperson")
+    companions = models.ManyToManyField(
+        "users.User", blank=True)
     price = models.IntegerField(default=0)
+    location = models.ForeignKey("travels.Travel", on_delete=models.CASCADE)
     currency = models.CharField(
         choices=CURRENCY_CHOICES, max_length=2, default=CURRENCY_KOREAN)
     category = models.CharField(
