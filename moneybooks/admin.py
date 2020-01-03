@@ -6,4 +6,11 @@ from . import models
 
 @admin.register(models.Moneybook)
 class MoneybookAdmin(admin.ModelAdmin):
+
+    list_display = ("paidperson",
+                    "price",
+                    "location",
+                    "currency",
+                    "category"
+                    )
     pass
